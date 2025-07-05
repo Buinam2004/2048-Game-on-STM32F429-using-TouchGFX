@@ -1,0 +1,1026 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "start.png"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "ClickToStart",
+            "Y": 210,
+            "Width": 240,
+            "Height": 110,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 240,
+                "Height": 110,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ClickToStart"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen2",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 255,
+              "Green": 252,
+              "Blue": 219
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "backgr_2048.png"
+          },
+          {
+            "Type": "Container",
+            "Name": "container17",
+            "X": 6,
+            "Y": 68,
+            "Width": 225,
+            "Height": 225,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "X": -2,
+            "Y": 80,
+            "Width": 240,
+            "Height": 240,
+            "Color": {
+              "Red": 87,
+              "Green": 53,
+              "Blue": 11
+            },
+            "Alpha": 0
+          },
+          {
+            "Type": "Container",
+            "Name": "container2",
+            "X": 13,
+            "Y": 130,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_1_0_bg",
+            "X": 6,
+            "Y": 144,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container3",
+            "X": 13,
+            "Y": 185,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_2_0_bg",
+            "X": 6,
+            "Y": 203,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container7",
+            "X": 68,
+            "Y": 185,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_2_1_bg",
+            "X": 65,
+            "Y": 203,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container4",
+            "X": 13,
+            "Y": 240,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_3_0_bg",
+            "X": 6,
+            "Y": 262,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container5",
+            "X": 68,
+            "Y": 75,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_0_1_bg",
+            "X": 65,
+            "Y": 85,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container1",
+            "X": 13,
+            "Y": 75,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_0_0_bg",
+            "X": 6,
+            "Y": 85,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container12",
+            "X": 123,
+            "Y": 75,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_0_2_bg",
+            "X": 124,
+            "Y": 85,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container13",
+            "X": 178,
+            "Y": 75,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_0_3_bg",
+            "X": 183,
+            "Y": 85,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container10",
+            "X": 123,
+            "Y": 185,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_2_2_bg",
+            "X": 124,
+            "Y": 203,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container9",
+            "X": 123,
+            "Y": 240,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_3_2_bg",
+            "X": 124,
+            "Y": 262,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container16",
+            "X": 178,
+            "Y": 240,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_3_3_bg",
+            "X": 182,
+            "Y": 262,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container8",
+            "X": 68,
+            "Y": 240,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_3_1_bg",
+            "X": 65,
+            "Y": 262,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container14",
+            "X": 178,
+            "Y": 130,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_1_3_bg",
+            "X": 182,
+            "Y": 144,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container6",
+            "X": 68,
+            "Y": 130,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_1_1_bg",
+            "X": 65,
+            "Y": 144,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container15",
+            "X": 178,
+            "Y": 185,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_2_3_bg",
+            "X": 182,
+            "Y": 203,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "container11",
+            "X": 123,
+            "Y": 130,
+            "Width": 50,
+            "Height": 50,
+            "Components": []
+          },
+          {
+            "Type": "Box",
+            "Name": "tile_1_2_bg",
+            "X": 124,
+            "Y": 144,
+            "Width": 50,
+            "Height": 50,
+            "Color": {
+              "Red": 209,
+              "Green": 188,
+              "Blue": 171
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_0_0",
+            "X": 6,
+            "Y": 85,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_5CKR",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_0ROF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_0_3",
+            "X": 183,
+            "Y": 85,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_Y88Y",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_R6RF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_0_2",
+            "X": 124,
+            "Y": 85,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_PLFS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_0XP7",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_0_1",
+            "X": 65,
+            "Y": 85,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_XIDB",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_RA70",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_1_0",
+            "X": 6,
+            "Y": 144,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_43WA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_TKRM",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_2_0",
+            "X": 6,
+            "Y": 203,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_48WK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_ND10",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_3_0",
+            "X": 6,
+            "Y": 265,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_50OM",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_XBIG",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_1_1",
+            "X": 65,
+            "Y": 144,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_DXQJ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_L8UR",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_1_2",
+            "X": 124,
+            "Y": 144,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_3WAJ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_NY3W",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_1_3",
+            "X": 185,
+            "Y": 144,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_XFYH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_16IC",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_2_1",
+            "X": 65,
+            "Y": 203,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_OWVA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_A0O4",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_2_2",
+            "X": 124,
+            "Y": 203,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_QU1B",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_7LD0",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_2_3",
+            "X": 182,
+            "Y": 203,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_R1FR",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_T1C6",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_3_1",
+            "X": 65,
+            "Y": 262,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_A2XU",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_4MIE",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_3_2",
+            "X": 124,
+            "Y": 262,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_ROKR",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_KGKB",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "tile_3_3",
+            "X": 182,
+            "Y": 262,
+            "Width": 50,
+            "Height": 50,
+            "TextId": "__SingleUse_SMCT",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_XMNO",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 127,
+            "Y": 8,
+            "Width": 111,
+            "Height": 27,
+            "TextId": "__SingleUse_K6KW",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_PP15",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "clickToEnd",
+            "X": 93,
+            "Y": 35,
+            "Width": 145,
+            "Height": 40,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 145,
+                "Height": 40,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "clickToEnd"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen3"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen3"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen3",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 250,
+              "Green": 243,
+              "Blue": 207
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "end.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Score",
+            "X": 53,
+            "Y": 144,
+            "Width": 118,
+            "Height": 32,
+            "TextId": "__SingleUse_1XCI",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_4DQI",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "ClickToRestart",
+            "Y": 231,
+            "Width": 240,
+            "Height": 89,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 240,
+                "Height": 89,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ClickToRestart"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "2048",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F429/439",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m4",
+    "ProjectFile": "../STM32F429I_DISCO_REV_D01.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts"
+    ]
+  },
+  "Version": "4.25.0",
+  "CreatedBy": "4.25.0"
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.25.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_4DQI" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_1XCI" Alignment="Center" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_PP15" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_K6KW" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_XMNO" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_SMCT" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_KGKB" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_ROKR" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_4MIE" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_A2XU" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_T1C6" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_R1FR" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_7LD0" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_QU1B" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_A0O4" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_OWVA" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_16IC" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_XFYH" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_NY3W" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_3WAJ" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_L8UR" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_DXQJ" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_XBIG" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_50OM" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_ND10" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_48WK" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_TKRM" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_43WA" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_R6RF" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_Y88Y" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_0XP7" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_PLFS" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_RA70" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_XIDB" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_0ROF" Alignment="Left" TypographyId="number">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_5CKR" Alignment="Center" TypographyId="number">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="segoeuib.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" WildcardCharacters="0123456789" />
+    <Typography Id="Large" Font="comic.ttf" Size="30" Bpp="4" IsVector="no" Direction="LTR" WildcardCharacters="0123456789" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" WildcardCharacters="0123456789" />
+    <Typography Id="number" Font="segoeuib.ttf" Size="25" Bpp="4" IsVector="no" Direction="LTR" WildcardCharacters="0123456789" />
+  </Typographies>
+</TextDatabase>
