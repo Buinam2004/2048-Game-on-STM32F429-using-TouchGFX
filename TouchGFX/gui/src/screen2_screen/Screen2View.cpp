@@ -8,6 +8,8 @@
 extern "C" {
 #include "main.h"
 }
+#include <touchgfx/Color.hpp>
+using namespace touchgfx;
 Unicode::UnicodeChar buff[4][4][20];
 Unicode::UnicodeChar score[20];
 extern int JoytickX;
@@ -24,6 +26,23 @@ int arr[4][4]= {
 
 int r[2]={2,4};
 unsigned int seed = (unsigned int)time(NULL);
+
+touchgfx::colortype getTileBgColor(int v) {
+    switch (v) {
+        case 2:    return touchgfx::Color::getColorFromRGB(230, 230, 250);
+        case 4:    return touchgfx::Color::getColorFromRGB(173, 216, 230);
+        case 8:    return touchgfx::Color::getColorFromRGB(144, 238, 144);
+        case 16:   return touchgfx::Color::getColorFromRGB(102, 51, 153);
+        case 32:   return touchgfx::Color::getColorFromRGB(34, 139, 34);
+        case 64:   return touchgfx::Color::getColorFromRGB(0, 104, 139);
+        case 128:  return touchgfx::Color::getColorFromRGB(138, 43, 226);
+        case 256:  return touchgfx::Color::getColorFromRGB(0, 191, 255);
+        case 512:  return touchgfx::Color::getColorFromRGB(50, 205, 50);
+        case 1024: return touchgfx::Color::getColorFromRGB(25, 25, 112);
+        case 2048: return touchgfx::Color::getColorFromRGB(75, 0, 130);
+        default:   return touchgfx::Color::getColorFromRGB(204, 192, 179);
+    }
+}
 
 int randInRange(unsigned int seed, int min, int max) {
     static std::mt19937 rng(std::random_device{}());  // Chỉ khởi tạo 1 lần với seed từ random_device
@@ -282,13 +301,20 @@ void Screen2View::Bottom(){
     point += downAction(arr,seed);
     Show();
 }
+
 void Screen2View::Show()
 {
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             memset(buff[i][j], 0, sizeof(buff[i][j]));
 
-            // Xử lý giá trị hiển thị
+            // Gọi tên TextArea và Box theo đúng Screen2ViewBase
+            #define TILE(i,j) tile_##i##_##j
+            #define TILE_BG(i,j) tile_##i##_##j##_bg
+
+            colortype bg = getTileBgColor(arr[i][j]);
+
+            // Cập nhật text
             if (arr[i][j] == 0) {
                 Unicode::snprintf(buff[i][j], sizeof(buff[i][j]) / sizeof(Unicode::UnicodeChar), " ");
             } else if (arr[i][j] >= 1024) {
@@ -297,25 +323,26 @@ void Screen2View::Show()
                 Unicode::snprintf(buff[i][j], sizeof(buff[i][j]) / sizeof(Unicode::UnicodeChar), "%d", arr[i][j]);
             }
 
-            // Map i, j -> tile tương ứng
+            // Truy cập biến tile và tile_bg theo macro
             switch (i * 4 + j) {
-                case 0: tile_0_0.setWildcard(buff[i][j]); tile_0_0.invalidate(); break;
-                case 1: tile_0_1.setWildcard(buff[i][j]); tile_0_1.invalidate(); break;
-                case 2: tile_0_2.setWildcard(buff[i][j]); tile_0_2.invalidate(); break;
-                case 3: tile_0_3.setWildcard(buff[i][j]); tile_0_3.invalidate(); break;
-                case 4: tile_1_0.setWildcard(buff[i][j]); tile_1_0.invalidate(); break;
-                case 5: tile_1_1.setWildcard(buff[i][j]); tile_1_1.invalidate(); break;
-                case 6: tile_1_2.setWildcard(buff[i][j]); tile_1_2.invalidate(); break;
-                case 7: tile_1_3.setWildcard(buff[i][j]); tile_1_3.invalidate(); break;
-                case 8: tile_2_0.setWildcard(buff[i][j]); tile_2_0.invalidate(); break;
-                case 9: tile_2_1.setWildcard(buff[i][j]); tile_2_1.invalidate(); break;
-                case 10: tile_2_2.setWildcard(buff[i][j]); tile_2_2.invalidate(); break;
-                case 11: tile_2_3.setWildcard(buff[i][j]); tile_2_3.invalidate(); break;
-                case 12: tile_3_0.setWildcard(buff[i][j]); tile_3_0.invalidate(); break;
-                case 13: tile_3_1.setWildcard(buff[i][j]); tile_3_1.invalidate(); break;
-                case 14: tile_3_2.setWildcard(buff[i][j]); tile_3_2.invalidate(); break;
-                case 15: tile_3_3.setWildcard(buff[i][j]); tile_3_3.invalidate(); break;
+                case 0:  TILE(0,0).setWildcard(buff[i][j]);  TILE(0,0).invalidate();  TILE_BG(0,0).setColor(bg);  TILE_BG(0,0).invalidate(); break;
+                case 1:  TILE(0,1).setWildcard(buff[i][j]);  TILE(0,1).invalidate();  TILE_BG(0,1).setColor(bg);  TILE_BG(0,1).invalidate(); break;
+                case 2:  TILE(0,2).setWildcard(buff[i][j]);  TILE(0,2).invalidate();  TILE_BG(0,2).setColor(bg);  TILE_BG(0,2).invalidate(); break;
+                case 3:  TILE(0,3).setWildcard(buff[i][j]);  TILE(0,3).invalidate();  TILE_BG(0,3).setColor(bg);  TILE_BG(0,3).invalidate(); break;
+                case 4:  TILE(1,0).setWildcard(buff[i][j]);  TILE(1,0).invalidate();  TILE_BG(1,0).setColor(bg);  TILE_BG(1,0).invalidate(); break;
+                case 5:  TILE(1,1).setWildcard(buff[i][j]);  TILE(1,1).invalidate();  TILE_BG(1,1).setColor(bg);  TILE_BG(1,1).invalidate(); break;
+                case 6:  TILE(1,2).setWildcard(buff[i][j]);  TILE(1,2).invalidate();  TILE_BG(1,2).setColor(bg);  TILE_BG(1,2).invalidate(); break;
+                case 7:  TILE(1,3).setWildcard(buff[i][j]);  TILE(1,3).invalidate();  TILE_BG(1,3).setColor(bg);  TILE_BG(1,3).invalidate(); break;
+                case 8:  TILE(2,0).setWildcard(buff[i][j]);  TILE(2,0).invalidate();  TILE_BG(2,0).setColor(bg);  TILE_BG(2,0).invalidate(); break;
+                case 9:  TILE(2,1).setWildcard(buff[i][j]);  TILE(2,1).invalidate();  TILE_BG(2,1).setColor(bg);  TILE_BG(2,1).invalidate(); break;
+                case 10: TILE(2,2).setWildcard(buff[i][j]);  TILE(2,2).invalidate();  TILE_BG(2,2).setColor(bg);  TILE_BG(2,2).invalidate(); break;
+                case 11: TILE(2,3).setWildcard(buff[i][j]);  TILE(2,3).invalidate();  TILE_BG(2,3).setColor(bg);  TILE_BG(2,3).invalidate(); break;
+                case 12: TILE(3,0).setWildcard(buff[i][j]);  TILE(3,0).invalidate();  TILE_BG(3,0).setColor(bg);  TILE_BG(3,0).invalidate(); break;
+                case 13: TILE(3,1).setWildcard(buff[i][j]);  TILE(3,1).invalidate();  TILE_BG(3,1).setColor(bg);  TILE_BG(3,1).invalidate(); break;
+                case 14: TILE(3,2).setWildcard(buff[i][j]);  TILE(3,2).invalidate();  TILE_BG(3,2).setColor(bg);  TILE_BG(3,2).invalidate(); break;
+                case 15: TILE(3,3).setWildcard(buff[i][j]);  TILE(3,3).invalidate();  TILE_BG(3,3).setColor(bg);  TILE_BG(3,3).invalidate(); break;
             }
+
         }
     }
     Unicode::snprintf(score, SIZE, "%d", point);
