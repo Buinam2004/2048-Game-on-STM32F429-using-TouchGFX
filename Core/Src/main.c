@@ -1129,7 +1129,7 @@ void StartDefaultTask(void *argument)
 	  	  char s[20];
 	  	  sprintf(s,"%3d-%3d\n",JoytickX,JoytickY);
 	  	  HAL_UART_Transmit(&huart1,s,strlen(s),10);
-	  	  osDelay(100);
+	  	  osDelay(50);
   }
   /* USER CODE END 5 */
 }
