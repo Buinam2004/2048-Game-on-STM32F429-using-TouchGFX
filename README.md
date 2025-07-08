@@ -329,3 +329,8 @@ Các hàm đẩy ô phải, lên, xuống và xử lý hành động di chuyển
 
 - Video demo: https://drive.google.com/file/d/163mSohUCr-TOBkUZcJT80i0_B8OLViLZ/view?usp=sharing
   
+### SỰ CỐ
+
+- <https://github.com/Buinam2004/2048-Game-on-STM32F429-using-TouchGFX/issues/1> 
+
+  
