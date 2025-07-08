@@ -312,6 +312,19 @@ Các hàm đẩy ô phải, lên, xuống và xử lý hành động di chuyển
         return 1;
      }
   ```
+  ```cpp
+     /**
+      *  Hàm khởi tạo màn hình restart game nếu thắng/thua hoặc bấm nút endgame
+      *  Hiển thị số điểm cuối cùng của người chơi
+      */
+      void Screen3View::setupScreen()
+      {
+          Screen3ViewBase::setupScreen();
+          Unicode::snprintf(score, SIZE, "%d", point);
+          Score.setWildcard(score);
+          Score.invalidate();
+      }
+  ```
 ### KẾT QUẢ
 
 - Video demo: https://drive.google.com/file/d/163mSohUCr-TOBkUZcJT80i0_B8OLViLZ/view?usp=sharing
